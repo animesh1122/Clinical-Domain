@@ -14,7 +14,7 @@ library(rtf)
 ##############################
 #Set working Directory
 setwd("F:/Kamlesh/Learning/R/R_Working_Directory")
-adae <- read.csv(file = "F:/Kamlesh/Learning/R/R in Clinical Programming/Project 1_AE/adae.csv", 
+adae <- read.csv(file = "F:/Learning/R/R in Clinical Programming/Project 1_AE/adae.csv", 
                  fileEncoding="UTF-8-BOM", 
                  blank.lines.skip = TRUE,
                  header = TRUE)

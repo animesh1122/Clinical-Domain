@@ -19,7 +19,7 @@ adae <- read.csv(file = "F:/Learning/R/R in Clinical Programming/Project 1_AE/ad
                  blank.lines.skip = TRUE,
                  header = TRUE)
 
-##############################
+############################## 
 # Step: 2 - Selection of records
 ##############################
 # Select safety population and keep only

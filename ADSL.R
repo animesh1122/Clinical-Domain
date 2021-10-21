@@ -29,7 +29,7 @@ as.factor(adsl$ITTFL)
 # 5 levels of BORRESP
 # 3 levels of NEREASN, value missing only when BORRESP ne to NE, variabels shows reason of NE
 
-# align sex variables to M and F
+# align sex variables to M and F 
 as.factor(adsl$SEX)
 # we have factor levels f F  female Female M Male, so rename to F and M only
 adsl$SEX[adsl$SEX == "f"] <- "F"

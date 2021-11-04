@@ -1,6 +1,6 @@
 #------------------------------
 #Package: tidyverse, kableExtra, rtf
-#Goal: Create AE Table using R Base and   
+#Goal: Create AE Table using R Base and    
 #      tidyverse 
 #------------------------------
 ##############################

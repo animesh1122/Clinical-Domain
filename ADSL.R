@@ -6,7 +6,7 @@ library(Hmisc)
 library(readxl)
   
 # import excel files from local drive
-adsl <- read_excel("D:/R/adsl.xls")
+adsl <- read_excel("D:/R/adsl.xls") 
 
 # clean ADSL
 

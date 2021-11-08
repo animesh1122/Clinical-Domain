@@ -12,7 +12,7 @@ adsl <- read_excel("D:/R/adsl.xls")
 
 # check type of variables
 str(adsl) 
-
+ 
 # check factors available of character variables
 as.factor(adsl$USUBJID)
 as.factor(adsl$RACE)

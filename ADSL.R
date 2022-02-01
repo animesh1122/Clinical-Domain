@@ -1,7 +1,7 @@
 # load environment
 library(foreign) 
 library(dplyr)
-library(tidyr)
+library(tidyr) 
 library(Hmisc) 
 library(readxl)
   
@@ -24,7 +24,7 @@ as.factor(adsl$BORRESP)
 as.factor(adsl$NEREASN)
 as.factor(adsl$ITTFL)
 # 100 USUBJID check, 7 race, 2 ethnic, 2 contries
-# 2 levels of TRT01p, CMP123 and Placebo
+# 2 levels of TRT01p, CMP123 and Placebo 
 # 2 levels of TRT01a, CMP123 and Placebo, missing value found
 # 5 levels of BORRESP
 # 3 levels of NEREASN, value missing only when BORRESP ne to NE, variabels shows reason of NE
@@ -70,7 +70,7 @@ adsl_clean$SAFFL[adsl_clean$ITTFL=="Y" & is.na(adsl_clean$trtstdtc)== FALSE] <- 
 # get a warning message but variable is successfully created
 
 # derive age group variables
-adsl_clean$agegr1[adsl_clean$Age<65] <-"<65"
+adsl_clean$agegr1[adsl_clean$Age<65] <-"<65" 
 adsl_clean$agegr1[adsl_clean$Age>=65] <- ">=65"
 adsl_clean$agegr2[adsl_clean$Age<45] <- "<45"
 adsl_clean$agegr2[adsl_clean$Age>=45 & adsl_clean$Age<65] <- "45-65"
@@ -110,7 +110,7 @@ summary <-
               "Black" = ~ qwraps2::n_perc0(.data$RACE == "Black"),
               "White" = ~ qwraps2::n_perc0(.data$RACE == "White"),
               "Native Hawaiian or Pacific Islander" = ~ qwraps2::n_perc0(.data$RACE == "Native Hawaiian or Pacific Islander"),
-              "Multiracial" = ~ qwraps2::n_perc0(.data$RACE == "Multiracial"),
+              "Multiracial" = ~ qwraps2::n_perc0(.data$RACE == "Multiracial"), 
               "Other" = ~ qwraps2::n_perc0(.data$RACE == "Other")),
        "ETHNICITY (%)" =
          list("MALE" = ~ qwraps2::n_perc0(.data$Ethnic == "Hispanic"),
@@ -155,7 +155,7 @@ library(survival)
 library(survminer)
 
 KM <- survfit(Surv(aval,cnsr) ~ trt01a, data = adtte)
-ggsurvplot(KM, 
+ggsurvplot(KM,  
            data = adtte,
            size = 0.5,
            pval = T,

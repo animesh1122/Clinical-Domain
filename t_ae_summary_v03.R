@@ -3,7 +3,7 @@
 #Goal: Create AE Table using R Base and    
 #      tidyverse 
 #------------------------------ 
-############################## 
+##############################  
 # Step: 0 - Load libraries
 ##############################
 library(tidyverse)
@@ -47,7 +47,7 @@ any_bodsys <- adae3 %>%
 
 # ::C:: Any AEBODSYS-AEDECOD AE - Toxicity Grade
 any_decod <- adae3 %>%
-  group_by(USUBJID, TRTA, AEBODSYS, AEDECOD) %>%
+  group_by(USUBJID, TRTA, AEBODSYS, AEDECOD) %>% 
   arrange(USUBJID, TRTA,AEBODSYS, AEDECOD, -AETOXGR)%>%
   slice_head(n=1)
 

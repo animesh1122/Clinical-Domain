@@ -1,5 +1,5 @@
 # load environment
-library(foreign) 
+library(foreign)  
 library(dplyr)
 library(tidyr) 
 library(Hmisc) 
@@ -8,7 +8,7 @@ library(readxl)
 # import excel files from local drive
 adsl <- read_excel("D:/R/adsl.xls") 
 
-# clean ADSL
+# clean ADSL 
 
 # check type of variables
 str(adsl) 

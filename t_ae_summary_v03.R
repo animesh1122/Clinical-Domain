@@ -1,6 +1,6 @@
 #------------------------------
 #Package: tidyverse, kableExtra, rtf
-#Goal: Create AE Table using R Base and    
+#Goal: Create AE Table using R Base and     
 #      tidyverse 
 #------------------------------ 
 ##############################  
@@ -33,7 +33,7 @@ adae3 <- adae2[order(adae2$AEBODSYS, adae2$AEDECOD, -adae2$AETOXGR),]
 
 #Select Highest Toxicity Grade AEs per
 # ::A:: Any AE - Toxicity Grade 
-any_ae <- adae3 %>%
+any_ae <- adae3 %>% 
   group_by(USUBJID, TRTA) %>%
   arrange(USUBJID, TRTA, -AETOXGR)%>%
   slice_head(n=1)

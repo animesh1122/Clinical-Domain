@@ -16,7 +16,7 @@ str(adsl)
 # check factors available of character variables
 as.factor(adsl$USUBJID)
 as.factor(adsl$RACE)
-as.factor(adsl$Ethnic)
+as.factor(adsl$Ethnic) 
 as.factor(adsl$Country)
 as.factor(adsl$Trt01p)
 as.factor(adsl$Trt01a)

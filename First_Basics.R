@@ -8,7 +8,7 @@ r2rtf_adae %>%
   select(USUBJID, TRTA, AEDECOD) %>%
   head(10)
 
-r2rtf_adsl %>%
+r2rtf_adsl %>% 
   select(USUBJID,STUDYID,TRTSDT) %>%
   head(4)
 

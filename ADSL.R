@@ -5,7 +5,7 @@ library(tidyr)
 library(Hmisc)  
 library(readxl) 
   
-# import excel files from local drive
+# import excel files from local drive 
 adsl <- read_excel("D:/R/adsl.xls") 
 
 # clean ADSL  

@@ -16,7 +16,7 @@ tbl1 <- r2rtf_adae %>%
   count(TRTA,AEDECOD) %>%
   pivot_wider(names_from = TRTA,values_from = n,values_fill = 0)
 
-tbl1 %>% head(5)
+tbl1 %>% head(5) 
 
 # First Table
 head(tbl1) %>% 

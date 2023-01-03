@@ -6,7 +6,7 @@
 ##############################   
 # Step: 0 - Load libraries
 ##############################
-library(tidyverse)
+library(tidyverse) 
 library(kableExtra)
 library(rtf)
 ############################## 

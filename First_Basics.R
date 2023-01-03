@@ -13,7 +13,7 @@ r2rtf_adsl %>%
   head(4)
 
 tbl1 <- r2rtf_adae %>%
-  count(TRTA,AEDECOD) %>%
+  count(TRTA,AEDECOD) %>% 
   pivot_wider(names_from = TRTA,values_from = n,values_fill = 0)
 
 tbl1 %>% head(5) 

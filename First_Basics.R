@@ -20,7 +20,7 @@ tbl1 %>% head(5)
 
 # First Table
 head(tbl1) %>% 
-# tbl1 %>%  /for whole dataset 
+# tbl1 %>%  /for whole dataset  
   rtf_body() %>%
   rtf_encode() %>%
   write_rtf("D:/R/R_clinical/TFL_output/ae_1.rtf")

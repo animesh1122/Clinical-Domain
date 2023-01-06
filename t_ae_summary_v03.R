@@ -1,5 +1,5 @@
 #------------------------------
-#Package: tidyverse, kableExtra, rtf 
+#Package: tidyverse, kableExtra, rtf  
 #Goal: Create AE Table using R Base and      
 #      tidyverse             
 #------------------------------ 

@@ -58,10 +58,10 @@ head(tbl1) %>%
   
   rtf_colheader(colheader = "Adverse Events | Placebo | Xanomeline High Dose | Xanomeline Low Dose",
                 border_top = c("", "single", "single", "single"),
-                col_rel_width = c(3,2,2,2)) %>%
+                col_rel_width = c(3,2,2,2)) %>%   
   
   rtf_body(col_rel_width = c(3,2,2,2), text_justification = c("l","c","c","c")) %>%
   
-  rtf_encode() %>%
+  rtf_encode() %>%  
   write_rtf("D:/R/R_clinical/TFL_output/ae_final.rtf")
-
+ 

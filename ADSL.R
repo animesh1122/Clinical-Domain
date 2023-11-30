@@ -11,7 +11,7 @@ adsl <- read_excel("D:/R/adsl.xls")
 # clean ADSL  
 
 # check type of variables
-str(adsl) 
+str(adsl)   
  
 # check factors available of character variables
 as.factor(adsl$USUBJID)
@@ -21,7 +21,7 @@ as.factor(adsl$Country)
 as.factor(adsl$Trt01p)
 as.factor(adsl$Trt01a)
 as.factor(adsl$BORRESP)
-as.factor(adsl$NEREASN)
+as.factor(adsl$NEREASN) 
 as.factor(adsl$ITTFL)
 # 100 USUBJID check, 7 race, 2 ethnic, 2 contries
 # 2 levels of TRT01p, CMP123 and Placebo 
